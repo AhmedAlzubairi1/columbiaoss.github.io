@@ -39,7 +39,6 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 {% assign orderedRepos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
 {% for repository in orderedRepos %}
-
 {% assign homepageLength = repository.homepage | size %}
 {% if homepageLength > 0 %}
 ### {{repository.name}} | [repo]({{ repository.html_url }}) | [pages]({{ repository.homepage }}) 
